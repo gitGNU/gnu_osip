@@ -145,7 +145,7 @@ extern "C" {
 
 #endif
 
-#ifdef WIN32
+#if defined(WIN32) && !defined(__GNUC__)
 #define alloca _alloca
 #endif
 
