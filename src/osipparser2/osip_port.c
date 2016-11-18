@@ -363,7 +363,7 @@ int
 osip_atoi (const char *number)
 {
 #if defined(__linux) || defined(HAVE_STRTOL)
-  int i;
+  long int i;
 
   if (number == NULL)
     return OSIP_UNDEFINED_ERROR;
